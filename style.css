@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 2em 4em;
     background-color: #f4f4f4;               /* color de respaldo */
-    background-image: url('assets/fondo.png');
+    background-image: url('Assets/Fondo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -136,6 +136,7 @@ footer p {
     justify-content: center;
     box-sizing: border-box;
     background-color: #fff;
+    border: 2px solid #c16fb1;
     border-radius: 999px;
     color: #c16fb1;
     font-family: 'Blinker', sans-serif;
