@@ -41,7 +41,7 @@ function updatePlayIcon() {
 
     musicIcon.src = playing
         ? 'Assets/play.png'
-        : 'Assets/pause.png';
+        : 'Assets/Pause.png';
 
     musicButton.setAttribute('aria-pressed', String(playing));
 
