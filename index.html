@@ -4,108 +4,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio IE 2026</title>
+    <title>Florencia Godoy | Portafolio 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ========== HEADER: título principal ========== -->
+    <!-- ========== HEADER ========== -->
     <header>
-        <h1>Portafolio IE 2026</h1>
+        <h1>Florencia Godoy</h1>
+        <p class="subtitulo">Portafolio 2026</p>
     </header>
 
-    <!-- ========== MAIN ========== -->
-    <main>
+    <!-- ========== LAYOUT: izquierda / centro / derecha ========== -->
+    <div class="layout">
 
-        <!-- Contenedor de texto: 2 columnas -->
-        <div id="container">
+        <!-- ===== BARRA LATERAL IZQUIERDA ===== -->
+        <div class="barra-izquierda">
 
-            <!-- Columna 1 -->
-            <div class="columna">
-                <p>
-                    La asignatura Imagen Escrita aborda la relación entre el diseño, la programación y la
-                    creación visual mediante el uso de p5.js. A lo largo del semestre se exploran distintas
-                    herramientas y conceptos de programación que permiten generar composiciones gráficas a
-                    partir de formas, colores, movimientos e interacciones.
-                </p>
-                <p>
-                    Mediante ejercicios prácticos se busca comprender el código como una herramienta de
-                    creación, experimentando con distintas posibilidades y soluciones gráficas.
-                </p>
-            </div>
+            <aside class="sobre-mi">
 
-            <!-- Columna 2 -->
-            <div class="columna">
+                <div class="foto">
+                    <img src="Assets/sobre-mi.png"
+                         alt="Florencia Godoy"
+                         onerror="this.parentElement.classList.add('sin-foto'); this.remove();">
+                </div>
+
+                <h2>Sobre mí</h2>
+
                 <p>
-                    Además, se incorpora el uso de inteligencia artificial como apoyo para resolver dudas,
-                    comprender el funcionamiento del código y desarrollar nuevas ideas.
+                    Estudiante de Diseño en la PUCV, 4to semestre.
+                    Me gusta hacer ilustraciones y dibujo vectorial.
+                    Todos los elementos gráficos de esta página
+                    fueron realizados por mí.
                 </p>
-                <p>
-                    Cada tarea permite aplicar los conocimientos adquiridos y avanzar progresivamente hacia
-                    composiciones más elaboradas, relacionando la programación con las decisiones propias
-                    del diseño.
-                </p>
+
+            </aside>
+
+            <!-- Enlaces -->
+            <div class="enlaces-izquierda">
+
+                <a class="nav-btn"
+                   href="https://wiki.ead.pucv.cl/Imagen_Escrita_2026"
+                   target="_blank"
+                   rel="noopener">
+                    Wiki del curso ↗
+                </a>
+
+                <a class="nav-btn"
+                   href="https://wiki.ead.pucv.cl/Florencia_Godoy"
+                   target="_blank"
+                   rel="noopener">
+                    Perfil de Casiopea ↗
+                </a>
+
             </div>
 
         </div>
 
-        <!-- Galería de proyectos: 5 tarjetas -->
-        <section class="galeria">
+        <!-- ===== CENTRO ===== -->
+        <main>
 
-            <!-- tarjeta 1 -->
-            <div class="tarjeta">
-                <a href="https://editor.p5js.org/Florencia.g95/full/pUrR3BkVI" target="_blank">
-                    <img src="Assets/Imagen1.png" alt="Tarea 1">
-                    <h3>Tarea 1</h3>
-                </a>
+            <!-- ---------- INICIO ---------- -->
+            <section class="panel activo"
+                     id="panel-inicio"
+                     role="tabpanel">
+
+                <h2 class="titulo-pildora">
+                    Sobre el curso
+                </h2>
+
+                <div class="caja caja-texto">
+
+                    <div class="columnas">
+
+                        <div>
+                            <p>
+                                La asignatura Imagen Escrita aborda la relación entre el diseño, la programación y la
+                                creación visual mediante el uso de p5.js. A lo largo del semestre se exploran distintas
+                                herramientas y conceptos de programación que permiten generar composiciones gráficas a
+                                partir de formas, colores, movimientos e interacciones.
+                            </p>
+
+                            <p>
+                                Mediante ejercicios prácticos se busca comprender el código como una herramienta de
+                                creación, experimentando con distintas posibilidades y soluciones gráficas.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                Además, se incorpora el uso de inteligencia artificial como apoyo para resolver dudas,
+                                comprender el funcionamiento del código y desarrollar nuevas ideas.
+                            </p>
+
+                            <p>
+                                Cada tarea permite aplicar los conocimientos adquiridos y avanzar progresivamente hacia
+                                composiciones más elaboradas, relacionando la programación con las decisiones propias
+                                del diseño.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ---------- TAREAS DE IMAGEN ESCRITA ---------- -->
+            <section class="panel"
+                     id="panel-tareas"
+                     role="tabpanel">
+
+                <h2 class="titulo-pildora">
+                    Tareas de Imagen Escrita
+                </h2>
+
+                <div class="caja caja-tareas">
+
+                    <div class="marcos">
+
+                        <!-- TAREA 1 -->
+                        <a class="marco"
+                           href="https://editor.p5js.org/Florencia.g95/full/pUrR3BkVI"
+                           target="_blank"
+                           rel="noopener">
+
+                            <span class="miniatura">
+                                <img class="img-base"
+                                     src="Assets/Imagen1.png"
+                                     alt="Tarea 1">
+
+                                <img class="img-preview"
+                                     src="Assets/preview-tarea1.gif"
+                                     alt=""
+                                     loading="lazy"
+                                     onerror="this.remove()">
+                            </span>
+
+                            <span class="marco-titulo">Tarea 1</span>
+                        </a>
+
+                        <!-- TAREA 2 -->
+                        <a class="marco"
+                           href="https://editor.p5js.org/Florencia.g95/full/313H5QkF6"
+                           target="_blank"
+                           rel="noopener">
+
+                            <span class="miniatura">
+                                <img class="img-base"
+                                     src="Assets/Imagen2.png"
+                                     alt="Tarea 2">
+
+                                <img class="img-preview"
+                                     src="Assets/preview-tarea2.gif"
+                                     alt=""
+                                     loading="lazy"
+                                     onerror="this.remove()">
+                            </span>
+
+                            <span class="marco-titulo">Tarea 2</span>
+                        </a>
+
+                        <!-- TAREA 3 -->
+                        <a class="marco"
+                           href="https://editor.p5js.org/Florencia.g95/full/48XBgICjs"
+                           target="_blank"
+                           rel="noopener">
+
+                            <span class="miniatura">
+                                <img class="img-base"
+                                     src="Assets/Imagen3.png"
+                                     alt="Tarea 3">
+
+                                <img class="img-preview"
+                                     src="Assets/preview-tarea3.gif"
+                                     alt=""
+                                     loading="lazy"
+                                     onerror="this.remove()">
+                            </span>
+
+                            <span class="marco-titulo">Tarea 3</span>
+                        </a>
+
+                        <!-- TAREA 4 -->
+                        <a class="marco"
+                           href="https://editor.p5js.org/Florencia.g95/full/33ymEXCnb"
+                           target="_blank"
+                           rel="noopener">
+
+                            <span class="miniatura">
+                                <img class="img-base"
+                                     src="Assets/Imagen4.png"
+                                     alt="Tarea 4">
+
+                                <img class="img-preview"
+                                     src="Assets/preview-tarea4.gif"
+                                     alt=""
+                                     loading="lazy"
+                                     onerror="this.remove()">
+                            </span>
+
+                            <span class="marco-titulo">Tarea 4</span>
+                        </a>
+
+                        <!-- TAREA 5 -->
+                        <a class="marco"
+                           href="https://editor.p5js.org/Florencia.g95/full/CC08RK41q"
+                           target="_blank"
+                           rel="noopener">
+
+                            <span class="miniatura">
+                                <img class="img-base"
+                                     src="Assets/Imagen5.png"
+                                     alt="Tarea 5">
+
+                                <img class="img-preview"
+                                     src="Assets/preview-tarea5.gif"
+                                     alt=""
+                                     loading="lazy"
+                                     onerror="this.remove()">
+                            </span>
+
+                            <span class="marco-titulo">Tarea 5</span>
+                        </a>
+
+                    </div>
+
+                    <!-- Proyecto final -->
+                    <div class="proyecto-final">
+
+                        <p>Proyecto final U1</p>
+
+                        <a href="https://editor.p5js.org/Florencia.g95/full/RNuZfvQg_"
+                           target="_blank"
+                           rel="noopener"
+                           class="boton-img">
+
+                            <img src="Assets/Boton.png"
+                                 alt="Ver proyecto">
+
+                            <span class="boton-hover">
+                                Ver proyecto
+                            </span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ---------- OTROS PROYECTOS ---------- -->
+            <section class="panel"
+                     id="panel-otros"
+                     role="tabpanel">
+
+                <h2 class="titulo-pildora">
+                    Otros proyectos realizados
+                </h2>
+
+                <div class="caja caja-texto">
+
+                    <div class="grilla">
+
+                        <!-- Ciudad Legible -->
+                        <div class="tarjeta">
+
+                            <a href="https://wiki.ead.pucv.cl/TCL_2026_-_Entrega_Final_Unidad_3_/_Florencia_Godoy"
+                               target="_blank"
+                               rel="noopener">
+
+                                <div class="portada">
+                                    <img class="img-base"
+                                         src="Assets/ciudad-legible.png"
+                                         alt="Ciudad Legible">
+                                </div>
+
+                                <h3>Ciudad Legible</h3>
+                            </a>
+
+                        </div>
+
+                        <!-- Creación Impresa -->
+                        <div class="tarjeta">
+
+                            <a href="https://wiki.ead.pucv.cl/Entrega_U2_TCI_2026_-_Florencia_Godoy"
+                               target="_blank"
+                               rel="noopener">
+
+                                <div class="portada">
+                                    <img class="img-base"
+                                         src="Assets/creacion-impresa.png"
+                                         alt="Creación Impresa">
+                                </div>
+
+                                <h3>Creación Impresa</h3>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- ===== MENÚ DERECHO ===== -->
+        <nav class="menu"
+             role="tablist"
+             aria-label="Secciones del portafolio">
+
+            <button class="nav-btn activo"
+                    role="tab"
+                    data-panel="inicio"
+                    aria-selected="true">
+                Inicio
+            </button>
+
+            <button class="nav-btn"
+                    role="tab"
+                    data-panel="tareas"
+                    aria-selected="false">
+                Tareas de Imagen Escrita
+            </button>
+
+            <button class="nav-btn"
+                    role="tab"
+                    data-panel="otros"
+                    aria-selected="false">
+                Otros proyectos realizados
+            </button>
+
+        </nav>
+
+    </div>
+
+    <!-- ========== REPRODUCTOR DE MÚSICA ========== -->
+
+    <audio
+        id="musica"
+        src="Assets/ㅤ - vono.mp3"
+        preload="none"
+        loop>
+    </audio>
+
+    <div class="control-musica"
+         aria-label="Reproductor de música">
+
+        <div class="musica-controles">
+
+            <!-- Reproducir / Pausar -->
+            <button id="btn-musica"
+                    type="button"
+                    aria-pressed="false"
+                    aria-label="Reproducir música"
+                    title="Reproducir">
+
+                <img id="icono-musica"
+                     src="Assets/pause.png"
+                     alt="">
+            </button>
+
+            <!-- Control de volumen -->
+            <div class="volumen-grupo">
+
+                <label for="volumen-musica">
+                    Volumen
+                </label>
+
+                <input id="volumen-musica"
+                       type="range"
+                       min="0"
+                       max="100"
+                       value="35">
+
             </div>
 
-            <!-- tarjeta 2 -->
-            <div class="tarjeta">
-                <a href="https://editor.p5js.org/Florencia.g95/full/313H5QkF6" target="_blank">
-                    <img src="Assets/Imagen2.png" alt="Tarea 2">
-                    <h3>Tarea 2</h3>
-                </a>
-            </div>
+        </div>
 
-            <!-- tarjeta 3 -->
-            <div class="tarjeta">
-                <a href="https://editor.p5js.org/Florencia.g95/full/48XBgICjs" target="_blank">
-                    <img src="Assets/Imagen3.png" alt="Tarea 3">
-                    <h3>Tarea 3</h3>
-                </a>
-            </div>
+        <!-- Nombre y enlace -->
+        <div class="musica-pie">
 
-            <!-- tarjeta 4 -->
-            <div class="tarjeta">
-                <a href="https://editor.p5js.org/Florencia.g95/full/33ymEXCnb" target="_blank">
-                    <img src="Assets/Imagen4.png" alt="Tarea 4">
-                    <h3>Tarea 4</h3>
-                </a>
-            </div>
+            <span>Vono</span>
 
-            <!-- tarjeta 5 -->
-            <div class="tarjeta">
-                <a href="https://editor.p5js.org/Florencia.g95/full/CC08RK41q" target="_blank">
-                    <img src="Assets/Imagen5.png" alt="Tarea 5">
-                    <h3>Tarea 5</h3>
-                </a>
-            </div>
+            <a class="link-cancion"
+               href="https://www.youtube.com/watch?v=IHDbMxuKgeo&amp;list=PLZN_ao3CcoWY&amp;index=1"
+               target="_blank"
+               rel="noopener">
+                Canción original ↗
+            </a>
 
-        </section>
+        </div>
 
-    </main>
+    </div>
 
-    <!-- ========== FOOTER ========== -->
-    <footer>
-        <p>Proyecto final U1</p>
-        <a href="https://editor.p5js.org/Florencia.g95/full/RNuZfvQg_" target="_blank" class="boton-img">
-            <img src="Assets/Boton.png" alt="Ver proyecto">
-            <span class="boton-hover">Ver proyecto</span>
-        </a>
-    </footer>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
