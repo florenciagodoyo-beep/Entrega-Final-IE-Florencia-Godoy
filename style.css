@@ -340,12 +340,10 @@ main {
 /* ========== MENÚ DERECHO ========== */
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7em;
-
-    position: sticky;
-    top: 1.5em;
+    flex-direction: row;
+    overflow-x: auto;
+    position: static;
+    padding-bottom: 0.4em;
 }
 
 .nav-btn {
@@ -726,5 +724,14 @@ a.nav-btn {
         width: calc(
             (100% - var(--separacion)) / 2
         );
+    }
+}
+@media (max-width: 600px) {
+    .control-musica {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: calc(100% - 2.4em);
+        margin: 2em auto;
     }
 }
