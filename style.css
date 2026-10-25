@@ -340,10 +340,12 @@ main {
 /* ========== MENÚ DERECHO ========== */
 
 .menu {
-    flex-direction: row;
-    overflow-x: auto;
-    position: static;
-    padding-bottom: 0.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7em;
+    position: sticky;
+    top: 1.5em;
 }
 
 .nav-btn {
@@ -701,12 +703,11 @@ a.nav-btn {
     }
 
     .menu {
-        order: -1;
-        flex-direction: row;
-        overflow-x: auto;
-        position: static;
-        padding-bottom: 0.4em;
-    }
+    flex-direction: row;
+    overflow-x: auto;
+    position: static;
+    padding-bottom: 0.4em;
+}
 
     .nav-btn {
         white-space: nowrap;
